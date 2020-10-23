@@ -59,7 +59,7 @@ class Finder:
         # 2) Apply reader to get granular answer(s)
         len_chars = sum([len(d.text) for d in documents])
         logger.info(f"Reader is looking for detailed answer in {len_chars} chars ...")
-        logger.info("Changing code")
+        logger.info(f"Changing code")
 
         results = self.reader.predict(question=question,
                                       documents=documents,

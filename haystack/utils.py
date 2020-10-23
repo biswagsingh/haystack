@@ -17,7 +17,7 @@ def print_answers(results: dict, details: str = "all"):
         if details == "minimal":
             keys_to_keep = set(["answer", "context"])
         elif details == "medium":
-            keys_to_keep = set(["answer", "context", "score"])
+            keys_to_keep = set(["answer", "context", "score", "probability","document_id"])
         else:
             keys_to_keep = answers.keys()
 
